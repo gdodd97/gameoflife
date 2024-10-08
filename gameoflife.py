@@ -20,9 +20,18 @@ def random_state(board_width, board_height):
     return state
 
 def render(state):
-    #todo build a render function that will print the board state as a pretty grid, replacing live cells with hashtags and dead cells with a space. 
+    for i in state:
+        print('|', end = ' ')
+        for j in i:
+            if j == 0:
+                print('X', end =  ' ')
+            if j == 1:
+                print('O', end = ' ')
+        print('|\n')
+
+def next_board_state(state):
+    #todo create function to intake current board state and calculate next board state. 
     return state
 
-width = 5
-height = 5
-print (random_state(width, height))
+a_random_state = random_state(5,5)
+render(a_random_state)
