@@ -31,7 +31,8 @@ def render(state):
 
 def next_board_state(state):
     #todo create function to intake current board state and calculate next board state. 
+
     return state
 
-a_random_state = random_state(5,5)
+a_random_state = random_state(3,3)
 render(a_random_state)
